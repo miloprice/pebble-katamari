@@ -1,0 +1,23 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "miloprice",
+    "longName": "Tiny Rolling Star",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Rolling Star",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "41a9f314-1d09-435a-abaa-394f809d4340",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
