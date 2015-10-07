@@ -7,7 +7,13 @@
     "longName": "Tiny Rolling Star",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/xw1.png",
+                "name": "IMAGE_TRENCH",
+                "type": "png"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Rolling Star",
