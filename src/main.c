@@ -93,7 +93,6 @@ static void window_load(Window *window) {
 	image_layer = bitmap_layer_create(bounds);
 	bitmap_layer_set_bitmap(image_layer, image);
 	bitmap_layer_set_alignment(image_layer, GAlignCenter);
-	layer_add_child(window_layer, bitmap_layer_get_layer(image_layer));
     
     
   // init layers
@@ -101,6 +100,7 @@ static void window_load(Window *window) {
   layer_set_update_proc(simple_bg_layer, bg_update_proc);
   layer_add_child(window_layer, simple_bg_layer);
 
+	layer_add_child(window_layer, bitmap_layer_get_layer(image_layer));
   // init date layer -> a plain parent layer to create a date update proc
   date_layer = layer_create(bounds);
   layer_set_update_proc(date_layer, date_update_proc);
