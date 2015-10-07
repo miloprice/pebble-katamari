@@ -89,7 +89,7 @@ static void window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
     
   window_set_background_color(window, GColorBlack);
-  image = gbitmap_create_with_resource(RESOURCE_ID_THE_KING);
+  image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_TRENCH);
 	image_layer = bitmap_layer_create(bounds);
 	bitmap_layer_set_bitmap(image_layer, image);
 	bitmap_layer_set_alignment(image_layer, GAlignCenter);

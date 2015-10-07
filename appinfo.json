@@ -9,11 +9,8 @@
     "resources": {
         "media": [
             {
-                "file": "images/rainbow-test.png",
-                "name": "THE_KING",
-                "targetPlatforms": [
-                    "basalt"
-                ],
+                "file": "images/xw1.png",
+                "name": "IMAGE_TRENCH",
                 "type": "png"
             }
         ]
