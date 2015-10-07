@@ -24,8 +24,8 @@ static GBitmap *image;
 
 static void bg_update_proc(Layer *layer, GContext *ctx) {
 
-  /*graphics_context_set_fill_color(ctx, GColorBlack);
-  graphics_fill_rect(ctx, layer_get_bounds(layer), 0, GCornerNone);*/
+  graphics_context_set_fill_color(ctx, GColorBlack);
+  graphics_fill_rect(ctx, layer_get_bounds(layer), 0, GCornerNone);
 
   graphics_context_set_fill_color(ctx, GColorWhite);
   for (int i = 0; i < NUM_CLOCK_TICKS; ++i) {
@@ -88,9 +88,9 @@ static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
     
-    window_set_background_color(window, GColorBlack);
-    //image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_DHARMA);
-	//image_layer = bitmap_layer_create(bounds);
+  window_set_background_color(window, GColorBlack);
+  image = gbitmap_create_with_resource(RESOURCE_ID_THE_KING);
+	image_layer = bitmap_layer_create(bounds);
 	bitmap_layer_set_bitmap(image_layer, image);
 	bitmap_layer_set_alignment(image_layer, GAlignCenter);
 	layer_add_child(window_layer, bitmap_layer_get_layer(image_layer));
@@ -135,6 +135,7 @@ static void window_unload(Window *window) {
   //text_layer_destroy(day_label);
   //text_layer_destroy(num_label);
   layer_destroy(hands_layer);
+  bitmap_layer_destroy(image_layer);
 }
 
 static void init(void) {

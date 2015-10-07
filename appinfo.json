@@ -7,7 +7,16 @@
     "longName": "Tiny Rolling Star",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/rainbow-test.png",
+                "name": "THE_KING",
+                "targetPlatforms": [
+                    "basalt"
+                ],
+                "type": "png"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Rolling Star",
